@@ -1,0 +1,55 @@
+body, html {
+  height: 100%; }
+
+h1 {
+  font-size: 100px;
+  font-family: Helvetica; }
+
+#description {
+  font-size: 30px;
+  font-family: Helvetica;
+  padding-left: 70px;
+  padding-right: 70px; }
+
+.bg-1 {
+  background-color: #FFD800;
+  color: #FFFFFF;
+  opacity: .85;
+  height: 100%;
+  width: 100%; }
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-size: 0px; }
+
+.container-ball {
+  padding-top: 70px;
+  width: 100%; }
+
+.container-paddle {
+  width: 100%;
+  font-size: 10px; }
+
+.ping-pong-ball {
+  fill: #FFFFFF;
+  animation: bounce .8s infinite alternate;
+  left: 50%;
+  position: absolute;
+  -webkit-animation: bounce .8s infinite alternate; }
+
+.bounce {
+  animation: bounce 1s; }
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(150px); } }
+
+@webkit-keyframes bounce {
+  from {
+    transform: translateY(150px); }
+  to {
+    transform: translateY(0px); } }
+

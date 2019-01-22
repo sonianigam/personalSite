@@ -1,0 +1,95 @@
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: Helvetica;
+  margin: 0;
+  color: #FFC300;
+}
+
+.bg-1 {
+  background-color: #C70039;
+  color: #FFFFFF;
+  height: 100%;
+  width: 100%
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ping-pong-ball {
+  animation: ball-bounce .8s infinite alternate;
+  -webkit-animation: ball-bounce .8s infinite alternate;
+  font-family: Helvetica;
+  font-size: 30px;
+}
+
+#ball {
+  padding-top: 50px;
+  overflow: visible; 
+  z-index: 2;
+}
+
+#paddle {
+  width: 100%;
+  animation: paddle-flick .8s infinite alternate;
+  -webkit-animation: paddle-flick .8s infinite alternate;
+}
+
+#description {
+  font-size: 30px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+@keyframes ball-bounce {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(80%);
+  }
+}
+
+@webkit-keyframes ball-bounce {
+  from {
+    transform: translateY(80%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes paddle-flick {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+@webkit-keyframes paddle-flick {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
