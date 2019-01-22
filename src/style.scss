@@ -8,11 +8,11 @@ h1 {
   font-size: 100px;
   font-family: Karla;
   margin: 0;
-  color: #FFC300;
+  color: #fff78f;
 }
 
 .bg-1 {
-  background-color: #C70039;
+  background-color: #f16f6f;
   color: #FFFFFF;
   height: 100%;
   width: 100%
@@ -28,6 +28,7 @@ h1 {
 
 .flex-row {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -36,8 +37,7 @@ h1 {
 .ping-pong-ball {
   animation: ball-bounce .8s infinite alternate;
   -webkit-animation: ball-bounce .8s infinite alternate;
-  font-family: Helvetica;
-  font-size: 30px;
+  font-family: Karla;
 }
 
 #ball {
@@ -46,8 +46,13 @@ h1 {
   z-index: 2;
 }
 
+#handle {
+  overflow: visible;
+  width: 39%;
+}
+
 #paddle {
-  width: 100%;
+  width: 61%;
   animation: paddle-flick .8s infinite alternate;
   -webkit-animation: paddle-flick .8s infinite alternate;
 }
@@ -56,6 +61,7 @@ h1 {
   font-size: 30px;
   font-family: Karla;
   text-align: center;
+  color: white;
 }
 
 @keyframes ball-bounce {

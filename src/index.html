@@ -15,20 +15,29 @@
       <div class= "flex-column">
         <svg id="ball">
           <circle class="ping-pong-ball" cx="50%" cy="50%" r="23%" stroke-width="4" fill="white"></circle>
-          <text class="ping-pong-ball" x="50%" y="50%" text-anchor="middle" fill="#900c3f" alignment-baseline="middle"></text>
-
+          <text class="ping-pong-ball" x="50%" y="50%" text-anchor="middle" fill="#94d2e6" alignment-baseline="middle">meet me</text>
         </svg>
-        <svg id="paddle">
-          <ellipse cx="50%" cy="70%" rx="18%" ry="25%" style="fill:#ff5733" />
-          <ellipse cx="50%" cy="68%" rx="18%" ry="25%" style="fill:#ff5733" />
-          <ellipse cx="50%" cy="66%" rx="18%" ry="25%" style="fill:white" />
-          <ellipse cx="50%" cy="64%" rx="18%" ry="25%" style="fill:white" />
-          <ellipse cx="50%" cy="62%" rx="18%" ry="25%" style="fill:white" />
-          <ellipse cx="50%" cy="60%" rx="18%" ry="25%" style="fill:white" />
-          <ellipse cx="50%" cy="58%" rx="18%" ry="25%" style="fill:white" />
-          <ellipse cx="50%" cy="56%" rx="18%" ry="25%" style="fill:white" />
-          <ellipse cx="50%" cy="55%" rx="18%" ry="25%" style="fill:#ffc300" />
-        </svg>
+        <div class="flex-row">
+          <svg id="handle">
+            <rect x="50%" y="50%" width=50% height=15% style="fill:#c1224f;">
+          </svg>
+          <svg id="paddle">
+            <defs>
+            <pattern id="pattern" x="5px" y="5px" width="10" height="10" patternUnits="userSpaceOnUse">
+            <circle id="ptnCircle" cx="5" cy="5" r="5" style="stroke: none; fill: #94d2e6;"/>
+            </pattern>
+            </defs>
+            <ellipse cx="18%" cy="70%" rx="18%" ry="25%" style="fill:#fff78f" />
+            <ellipse cx="18%" cy="68%" rx="18%" ry="25%" style="fill:#fff78f" />
+            <ellipse cx="18%" cy="66%" rx="18%" ry="25%" style="fill:white" />
+            <ellipse cx="18%" cy="64%" rx="18%" ry="25%" style="fill:white" />
+            <ellipse cx="18%" cy="62%" rx="18%" ry="25%" style="fill:white" />
+            <ellipse cx="18%" cy="60%" rx="18%" ry="25%" style="fill:white" />
+            <ellipse cx="18%" cy="58%" rx="18%" ry="25%" style="fill:white" />
+            <ellipse cx="18%" cy="56%" rx="18%" ry="25%" style="fill:#94d2e6; fill-opacity:.7;" />
+            <ellipse cx="18%" cy="55%" rx="18%" ry="25%" style="fill:url(#pattern)" />
+          </svg>
+        </div>
       </div>
     </div>
   </body>
