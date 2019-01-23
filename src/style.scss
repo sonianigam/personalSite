@@ -5,10 +5,11 @@ body, html {
 }
 
 h1 {
-  font-size: 100px;
-  font-family: Karla;
+  font-size: 1100%;
+  font-family: Cookie;
   margin: 0;
   color: #fff78f;
+  text-align: center;
 }
 
 .bg-1 {
@@ -37,22 +38,27 @@ h1 {
 .ping-pong-ball {
   animation: ball-bounce .8s infinite alternate;
   -webkit-animation: ball-bounce .8s infinite alternate;
-  font-family: Karla;
+  font-family: Cookie;
+  font-size: 30px;
 }
 
 #ball {
   padding-top: 50px;
-  overflow: visible; 
+  overflow: visible;
   z-index: 2;
 }
 
 #handle {
   overflow: visible;
   width: 39%;
+  transform-origin: bottom right;
+  animation: paddle-flick .8s infinite alternate;
+  -webkit-animation: paddle-flick .8s infinite alternate;
 }
 
 #paddle {
   width: 61%;
+  transform-origin: bottom left;
   animation: paddle-flick .8s infinite alternate;
   -webkit-animation: paddle-flick .8s infinite alternate;
 }
@@ -84,18 +90,18 @@ h1 {
 
 @keyframes paddle-flick {
   from {
-    transform: rotate(-5deg);
+    transform: rotate(-10deg);
   }
   to {
-    transform: rotate(5deg);
+    transform: rotate(0deg);
   }
 }
 
 @webkit-keyframes paddle-flick {
   from {
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(5deg);
+    transform: rotate(-10deg);
   }
 }

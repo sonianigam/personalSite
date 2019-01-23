@@ -4,17 +4,14 @@ body, html {
   margin: 0; }
 
 h1 {
-  font-size: 100px;
-  font-family: Helvetica;
+  font-size: 1100%;
+  font-family: Cookie;
   margin: 0;
-  color: #FFC300; }
-
-@font-face {
-  font-family: "Color Tube";
-  src: url(41192863363258fef8fe53a431ce5df3.otf); }
+  color: #fff78f;
+  text-align: center; }
 
 .bg-1 {
-  background-color: #C70039;
+  background-color: #f16f6f;
   color: #FFFFFF;
   height: 100%;
   width: 100%; }
@@ -28,6 +25,7 @@ h1 {
 
 .flex-row {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
@@ -35,7 +33,7 @@ h1 {
 .ping-pong-ball {
   animation: ball-bounce .8s infinite alternate;
   -webkit-animation: ball-bounce .8s infinite alternate;
-  font-family: Helvetica;
+  font-family: Cookie;
   font-size: 30px; }
 
 #ball {
@@ -43,15 +41,24 @@ h1 {
   overflow: visible;
   z-index: 2; }
 
+#handle {
+  overflow: visible;
+  width: 39%;
+  transform-origin: bottom right;
+  animation: paddle-flick .8s infinite alternate;
+  -webkit-animation: paddle-flick .8s infinite alternate; }
+
 #paddle {
-  width: 100%;
+  width: 61%;
+  transform-origin: bottom left;
   animation: paddle-flick .8s infinite alternate;
   -webkit-animation: paddle-flick .8s infinite alternate; }
 
 #description {
   font-size: 30px;
-  font-family: Helvetica;
-  text-align: center; }
+  font-family: Karla;
+  text-align: center;
+  color: white; }
 
 @keyframes ball-bounce {
   from {
@@ -67,13 +74,13 @@ h1 {
 
 @keyframes paddle-flick {
   from {
-    transform: rotate(-5deg); }
+    transform: rotate(-10deg); }
   to {
-    transform: rotate(5deg); } }
+    transform: rotate(0deg); } }
 
 @webkit-keyframes paddle-flick {
   from {
-    transform: rotate(-5deg); }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(5deg); } }
+    transform: rotate(-10deg); } }
 
