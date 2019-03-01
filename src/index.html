@@ -13,32 +13,49 @@
     <div class="flex-column bg-1">
       <h1>Hi there</h3>
       <p id="description"> sonia • developer • ping pong enthusiast</p>
+
       <div class= "flex-column">
         <svg id="ball">
-          <circle class="ping-pong-ball" cx="50%" cy="50%" r="23%" stroke-width="4" fill="white"></circle>
-          <text class="ping-pong-ball" x="50%" y="50%" text-anchor="middle" fill="#94d2e6" alignment-baseline="middle">meet me</text>
+          <defs>
+            <radialGradient id="gradient2" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+              <stop offset="5%" style="stop-color:white;" />
+              <stop offset="100%" style="stop-color:#ff9d76;" />
+            </radialGradient>
+          </defs>
+
+          <circle class="ping-pong-ball" cx="50%" cy="50%" r="23%" stroke-width="4" fill="url(#gradient2)"></circle>
+          <text class="ping-pong-ball" x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">meet me</text>
         </svg>
+
         <div class="flex-row">
-          <svg id="handle">
-            <rect x="51%" y="58%" ry="3%" width=50% height=5% style="fill:#7d7d7d;"></rect>
-            <rect x="51%" y="63%" width=50% height=3% style="fill:#c5c5c5;"></rect>
-            <rect x="51%" y="66%" ry="3%" width=50% height=5% style="fill:#7d7d7d;"></rect>
+          <svg id="handle" width="100%", height="100%">
+            <rect id="screen-width" x="56.5%" y="54%" ry="2%" width="50%" height="8%" transform="skewX(-20)" style="fill:#9DACFF; fill-opacity:.8;"></rect>
+            <script>
+              document.getElementById('screen-width').innerHTML = screen.width
+              console.log('screen-width'.innerHTML)
+            </script>
+
+            <rect x="51%" y="60%" ry="2%" width="50%" height="5%" style="fill:#9DACFF;"></rect>
+            <rect x="51%" y="64%" width="50%" height="3%" style="fill:#51eaea;"></rect>
+            <rect x="51%" y="66%" ry="2%" width="50%" height="5%" style="fill:#9DACFF;"></rect>
           </svg>
+
           <svg id="paddle">
             <defs>
             <pattern id="pattern" x="5px" y="5px" width="10" height="10" patternUnits="userSpaceOnUse">
-            <circle id="ptnCircle" cx="5" cy="5" r="5" style="stroke: none; fill: #94d2e6;"/>
+            <circle id="ptnCircle" cx="5" cy="5" r="5" style="stroke: none; fill: #EF798A;"/>
             </pattern>
             </defs>
-            <ellipse cx="18%" cy="70%" rx="18%" ry="25%" style="fill:#c5c5c5" />
-            <ellipse cx="18%" cy="68%" rx="18%" ry="25%" style="fill:#c5c5c5" />
+
+            <ellipse cx="18%" cy="70%" rx="18%" ry="25%" style="fill:#FF9D76" />
+            <ellipse cx="18%" cy="68%" rx="18%" ry="25%" style="fill:#FF9D76" />
             <ellipse cx="18%" cy="66%" rx="18%" ry="25%" style="fill:white" />
             <ellipse cx="18%" cy="64%" rx="18%" ry="25%" style="fill:white" />
             <ellipse cx="18%" cy="62%" rx="18%" ry="25%" style="fill:white" />
             <ellipse cx="18%" cy="60%" rx="18%" ry="25%" style="fill:white" />
             <ellipse cx="18%" cy="58%" rx="18%" ry="25%" style="fill:white" />
-            <ellipse cx="18%" cy="56%" rx="18%" ry="25%" style="fill:#94d2e6; fill-opacity:.7;" />
-            <ellipse cx="18%" cy="55%" rx="18%" ry="25%" style="fill:url(#pattern)" />
+            <ellipse cx="18%" cy="56%" rx="18%" ry="25%" style="fill:#EF798A; fill-opacity:.7;" />
+            <ellipse cx="18%" cy="55.5%" rx="18%" ry="25%" style="fill:url(#pattern)" />
           </svg>
         </div>
       </div>

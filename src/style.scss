@@ -8,12 +8,12 @@ h1 {
   font-size: 1100%;
   font-family: Cookie;
   margin: 0;
-  color: #fff78f;
+  color: #51eaea;
   text-align: center;
 }
 
 .bg-1 {
-  background-color: #f16f6f;
+  background-color: #FFFFFF;
   color: #FFFFFF;
   height: 100%;
   width: 100%
@@ -38,8 +38,8 @@ h1 {
 .ping-pong-ball {
   animation: ball-bounce .8s infinite alternate;
   -webkit-animation: ball-bounce .8s infinite alternate;
-  font-family: Cookie;
-  font-size: 30px;
+  font-family: Karla;
+  font-size: 15px;
 }
 
 #ball {
@@ -67,7 +67,7 @@ h1 {
   font-size: 30px;
   font-family: Karla;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 @keyframes ball-bounce {
